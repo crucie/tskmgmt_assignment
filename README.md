@@ -2,6 +2,8 @@
 
 A simple REST API for managing tasks built with Node.js and Express.
 
+**GitHub Repository:** https://github.com/crucie/tskmgmt_assignment
+
 ## Features
 
 - Create, read, update, and delete tasks

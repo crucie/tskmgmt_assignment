@@ -13,4 +13,4 @@ let nextId = 1;
 
 const getNextId = () => nextId++;
 
-export {tasks, getNextId, nextId}
+export {tasks, getNextId}

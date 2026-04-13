@@ -72,8 +72,11 @@ const updateTask = asyncHandler( async(req, res) => {
     if (req.body.status && !["pending", "done"].includes(req.body.status)) {
         throw new ApiError(400, "Invalid status. Must be 'pending' or 'done'");
     }
+
+    
     if (title) task.title = title;
     if (description !== undefined) task.description = description;
+    if (req.body.status) task.status = req.body.status;
 
     return res.status(200).json(
         new ApiResponse(200, task, "Task Updated Successfully")

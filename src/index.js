@@ -1,5 +1,4 @@
 import { app } from "./app.js";
-import { tasks } from "./taskStore.js";
 import taskRoutes from "./routes/task.routes.js"
 
 const PORT = 3000
